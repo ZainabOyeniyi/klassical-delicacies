@@ -1,0 +1,63 @@
+/* src/App.css */
+:root {
+  --ivory: #FFF8F0;
+  --burgundy: #4A2C2A;
+  --gold: #D4A017;
+  --gray: #4A4A4A;
+}
+
+.bg-ivory { background-color: var(--ivory); }
+.text-ivory { color: var(--ivory); }
+.bg-burgundy { background-color: var(--burgundy); }
+.text-burgundy { color: var(--burgundy); }
+.bg-gold { background-color: var(--gold); }
+.text-gold { color: var(--gold); }
+.text-gray { color: var(--gray); }
+
+.btn-burgundy {
+  background-color: var(--burgundy);
+  color: var(--ivory);
+}
+.btn-burgundy:hover {
+  background-color: #5B3735;
+}
+.btn-outline-burgundy {
+  border-color: var(--burgundy);
+  color: var(--burgundy);
+}
+.btn-outline-burgundy:hover {
+  background-color: var(--burgundy);
+  color: var(--ivory);
+}
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--ivory);
+}
+.btn-gold:hover {
+  background-color: #E8B923;
+}
+
+.navbar-custom {
+  transition: background-color 0.3s ease;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+section {
+  padding: 80px 0;
+}
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2.5rem !important;
+  }
+  .display-4 {
+    font-size: 1.8rem !important;
+  }
+  section {
+    padding: 50px 0;
+  }
+}
